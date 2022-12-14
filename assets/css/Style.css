@@ -5,43 +5,50 @@
 }
 
 html{
-
 }
 
 body{
-  
+  background: #f1f1f1;
 }
 
           /* Body */
+
+body > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body > :nth-child(1) > * {
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0;
+  background: #D6F8D6;
+  color: #000a;
+  padding: 1em 2em;
+  box-shadow: #1113 0 0 1rem;
+  border-radius: .125rem;
+  animation: name 3s ease-in-out infinite both;
+  cursor: pointer;
+}
           
           /* Animation */
 
 @keyframes name {
   0%{
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
   }
   100%{
+    scale: 1;
   }
 }
 
           /* Responsive */
 
-@media screen and (max-width:1024px) {
-  html{
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width:826px) {
-  html{
-    font-size: 3px;
-  }
-}
-
-@media screen and (max-width:632px) {
-  html{
-    font-size: 3px;
-  }
-}
 
 @media screen and (min-width:calc(1920px * calc(1 + 1/2) - 100px)) {
   html{
